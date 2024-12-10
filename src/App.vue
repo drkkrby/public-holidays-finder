@@ -203,17 +203,32 @@ export default {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-width: 100vw;
   background-color: #007066;
 }
 
 /* The main content */
 .main-content {
-  width: 45vw;
+  width: 95vw;
   background-color: #ffffff;
-  padding: 60px;
+  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   max-width: 100%;
   box-sizing: border-box;
+}
+
+@media (min-width: 768px){
+  .main-content {
+    width: 75vw;
+    padding: 45px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-content {
+    width: 45vw;
+    padding: 60px;
+  }
 }
 </style>
